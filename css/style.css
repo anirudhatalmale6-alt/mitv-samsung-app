@@ -82,18 +82,18 @@ body {
 }
 
 #loading-screen .app-title {
-    font-size: 56px;
+    font-size: 60px;
     font-weight: 900;
-    color: #c5941a;
+    color: #d4a520;
     letter-spacing: 3px;
     margin-bottom: 8px;
     text-align: center;
     text-shadow:
-        0 1px 0 #d4a520,
-        0 2px 0 #b8860b,
-        0 3px 0 #a07508,
-        0 4px 6px rgba(0, 0, 0, 0.3),
-        0 0 8px rgba(197, 148, 26, 0.2);
+        0 1px 0 #e6b830,
+        0 2px 0 #c5941a,
+        0 3px 0 #b8860b,
+        0 4px 6px rgba(0, 0, 0, 0.25),
+        0 0 10px rgba(212, 165, 32, 0.3);
     font-family: 'Georgia', 'Times New Roman', serif;
 }
 
