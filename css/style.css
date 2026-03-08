@@ -1,5 +1,5 @@
-/* Mi TELEVISION CLASICA - Samsung Tizen App Styles */
-/* Pastel color scheme - soft, warm, retro-classic feel */
+/* MI TELEVISION CLASICA FAMILIAR - Samsung Tizen App Styles */
+/* White background + Gold lettering (matching MI TV logo) */
 /* Coordinate space: 1920x1080 (Samsung scales to 4K automatically) */
 
 * {
@@ -17,9 +17,9 @@ body {
     width: 1920px;
     height: 1080px;
     overflow: hidden;
-    background: #1e1e2e;
+    background: #ffffff;
     font-family: 'SamsungOne', 'Segoe UI', Arial, sans-serif;
-    color: #f5f0eb;
+    color: #333333;
     -webkit-user-select: none;
     user-select: none;
 }
@@ -34,17 +34,6 @@ body {
     z-index: 1;
 }
 
-/* ── Overlay Layer ── */
-#overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 1920px;
-    height: 1080px;
-    z-index: 10;
-    pointer-events: none;
-}
-
 /* ── Loading Screen ── */
 #loading-screen {
     position: absolute;
@@ -53,7 +42,7 @@ body {
     width: 1920px;
     height: 1080px;
     z-index: 100;
-    background: linear-gradient(135deg, #2d2b42 0%, #1e1e2e 40%, #2a2540 70%, #1e1e2e 100%);
+    background: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,23 +64,23 @@ body {
 #loading-screen .logo-container img {
     width: 100%;
     height: auto;
-    border-radius: 16px;
-    filter: drop-shadow(0 6px 30px rgba(183, 148, 214, 0.3));
+    border-radius: 12px;
+    filter: drop-shadow(0 6px 24px rgba(0, 0, 0, 0.15));
 }
 
 #loading-screen .app-title {
     font-size: 52px;
     font-weight: 700;
-    color: #e8c8f0;
-    text-shadow: 0 2px 12px rgba(183, 148, 214, 0.4);
-    letter-spacing: 6px;
+    color: #b8860b;
+    text-shadow: 1px 1px 2px rgba(184, 134, 11, 0.3);
+    letter-spacing: 5px;
     margin-bottom: 8px;
     text-align: center;
 }
 
 #loading-screen .app-subtitle {
     font-size: 26px;
-    color: #a8c8e8;
+    color: #c5a236;
     letter-spacing: 5px;
     margin-bottom: 50px;
     font-weight: 300;
@@ -101,8 +90,8 @@ body {
 .spinner {
     width: 56px;
     height: 56px;
-    border: 4px solid rgba(183, 148, 214, 0.2);
-    border-top: 4px solid #d4a8e8;
+    border: 4px solid rgba(184, 134, 11, 0.2);
+    border-top: 4px solid #b8860b;
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
@@ -115,7 +104,7 @@ body {
 .loading-text {
     margin-top: 20px;
     font-size: 20px;
-    color: #a8c8e8;
+    color: #c5a236;
     letter-spacing: 2px;
     font-weight: 300;
 }
@@ -127,7 +116,7 @@ body {
     left: 0;
     width: 1920px;
     height: 120px;
-    background: linear-gradient(180deg, rgba(30,30,46,0.92) 0%, rgba(30,30,46,0.6) 60%, rgba(30,30,46,0) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0) 100%);
     display: flex;
     align-items: center;
     padding: 0 60px;
@@ -146,26 +135,27 @@ body {
     height: auto;
     margin-right: 18px;
     border-radius: 8px;
-    filter: drop-shadow(0 2px 8px rgba(183, 148, 214, 0.3));
+    filter: drop-shadow(0 2px 8px rgba(184, 134, 11, 0.4));
 }
 
 #top-bar .channel-name {
     font-size: 30px;
-    font-weight: 600;
-    color: #e8c8f0;
-    letter-spacing: 2px;
+    font-weight: 700;
+    color: #daa520;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 #top-bar .live-badge {
     margin-left: 20px;
     padding: 5px 16px;
-    background: #f4a0a0;
+    background: #e53935;
     border-radius: 20px;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #3a1a1a;
+    color: #ffffff;
     animation: pulse-live 2s ease-in-out infinite;
 }
 
@@ -177,8 +167,9 @@ body {
 #top-bar .clock {
     margin-left: auto;
     font-size: 26px;
-    color: #a8c8e8;
+    color: #daa520;
     font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 /* ── Bottom Bar ── */
@@ -188,7 +179,7 @@ body {
     left: 0;
     width: 1920px;
     height: 100px;
-    background: linear-gradient(0deg, rgba(30,30,46,0.92) 0%, rgba(30,30,46,0.6) 60%, rgba(30,30,46,0) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0) 100%);
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -209,7 +200,7 @@ body {
     align-items: center;
     gap: 10px;
     font-size: 18px;
-    color: #9ca0b8;
+    color: #cccccc;
 }
 
 .control-hint .key-icon {
@@ -219,12 +210,12 @@ body {
     min-width: 34px;
     height: 34px;
     padding: 0 10px;
-    border: 2px solid rgba(183, 148, 214, 0.4);
+    border: 2px solid rgba(218, 165, 32, 0.6);
     border-radius: 8px;
     font-size: 14px;
-    color: #d4a8e8;
+    color: #daa520;
     font-weight: 600;
-    background: rgba(183, 148, 214, 0.08);
+    background: rgba(218, 165, 32, 0.1);
 }
 
 /* ── Buffering Overlay ── */
@@ -235,7 +226,7 @@ body {
     width: 1920px;
     height: 1080px;
     z-index: 50;
-    background: rgba(30, 30, 46, 0.6);
+    background: rgba(255, 255, 255, 0.7);
     display: none;
     flex-direction: column;
     align-items: center;
@@ -250,14 +241,12 @@ body {
     width: 76px;
     height: 76px;
     border-width: 5px;
-    border-color: rgba(168, 200, 232, 0.2);
-    border-top-color: #a8c8e8;
 }
 
 #buffering-overlay .buffering-text {
     margin-top: 22px;
     font-size: 24px;
-    color: #e8c8f0;
+    color: #b8860b;
     letter-spacing: 2px;
     font-weight: 400;
 }
@@ -265,7 +254,7 @@ body {
 #buffering-overlay .buffering-percent {
     margin-top: 8px;
     font-size: 18px;
-    color: #a8c8e8;
+    color: #c5a236;
 }
 
 /* ── Pause Indicator ── */
@@ -277,13 +266,12 @@ body {
     z-index: 30;
     width: 110px;
     height: 110px;
-    background: rgba(30, 30, 46, 0.65);
-    border: 3px solid rgba(212, 168, 232, 0.4);
+    background: rgba(0, 0, 0, 0.5);
+    border: 3px solid rgba(218, 165, 32, 0.6);
     border-radius: 50%;
     display: none;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(4px);
 }
 
 #pause-indicator.active {
@@ -293,7 +281,7 @@ body {
 #pause-indicator svg {
     width: 44px;
     height: 44px;
-    fill: #e8c8f0;
+    fill: #daa520;
 }
 
 /* ── Error / Network Popup ── */
@@ -304,13 +292,13 @@ body {
     transform: translate(-50%, -50%);
     z-index: 200;
     width: 680px;
-    background: #2a2845;
-    border: 2px solid rgba(212, 168, 232, 0.5);
+    background: #ffffff;
+    border: 2px solid #daa520;
     border-radius: 20px;
     padding: 50px;
     text-align: center;
     display: none;
-    box-shadow: 0 10px 60px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 60px rgba(0, 0, 0, 0.15);
 }
 
 #error-popup.active {
@@ -325,13 +313,13 @@ body {
 #error-popup .error-title {
     font-size: 30px;
     font-weight: 600;
-    color: #f4a0a0;
+    color: #b8860b;
     margin-bottom: 14px;
 }
 
 #error-popup .error-message {
     font-size: 20px;
-    color: #b0b4cc;
+    color: #666666;
     line-height: 1.6;
     margin-bottom: 36px;
 }
@@ -346,20 +334,20 @@ body {
     padding: 14px 40px;
     font-size: 20px;
     font-weight: 600;
-    border: 2px solid rgba(160, 168, 200, 0.3);
+    border: 2px solid #cccccc;
     border-radius: 12px;
     background: transparent;
-    color: #f5f0eb;
+    color: #333333;
     cursor: pointer;
     outline: none;
     transition: all 0.2s ease;
 }
 
 .popup-btn.focused {
-    border-color: #d4a8e8;
-    background: rgba(212, 168, 232, 0.15);
-    color: #e8c8f0;
-    box-shadow: 0 0 24px rgba(212, 168, 232, 0.2);
+    border-color: #daa520;
+    background: rgba(218, 165, 32, 0.1);
+    color: #b8860b;
+    box-shadow: 0 0 24px rgba(218, 165, 32, 0.15);
 }
 
 /* ── Exit Confirmation Popup ── */
@@ -370,13 +358,13 @@ body {
     transform: translate(-50%, -50%);
     z-index: 200;
     width: 580px;
-    background: #2a2845;
-    border: 2px solid rgba(212, 168, 232, 0.5);
+    background: #ffffff;
+    border: 2px solid #daa520;
     border-radius: 20px;
     padding: 50px;
     text-align: center;
     display: none;
-    box-shadow: 0 10px 60px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 60px rgba(0, 0, 0, 0.15);
 }
 
 #exit-popup.active {
@@ -386,13 +374,13 @@ body {
 #exit-popup .exit-title {
     font-size: 34px;
     font-weight: 600;
-    color: #e8c8f0;
+    color: #b8860b;
     margin-bottom: 14px;
 }
 
 #exit-popup .exit-message {
     font-size: 22px;
-    color: #b0b4cc;
+    color: #666666;
     margin-bottom: 36px;
 }
 
