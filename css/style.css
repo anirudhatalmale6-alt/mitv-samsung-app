@@ -56,7 +56,7 @@ body {
 }
 
 #loading-screen .logo-container {
-    width: 760px;
+    width: 920px;
     height: auto;
     margin-bottom: 20px;
     position: relative;
@@ -65,11 +65,11 @@ body {
 #loading-screen .logo-container::after {
     content: '';
     position: absolute;
-    bottom: -10px;
-    left: 5%;
-    width: 90%;
-    height: 40px;
-    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.15) 35%, rgba(0, 0, 0, 0.05) 55%, transparent 75%);
+    bottom: -8px;
+    left: -12%;
+    width: 124%;
+    height: 70px;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.30) 20%, rgba(0, 0, 0, 0.15) 40%, rgba(0, 0, 0, 0.05) 60%, transparent 80%);
     border-radius: 50%;
     z-index: 0;
 }
