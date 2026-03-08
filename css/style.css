@@ -82,13 +82,19 @@ body {
 }
 
 #loading-screen .app-title {
-    font-size: 52px;
-    font-weight: 700;
-    color: #b8860b;
-    letter-spacing: 2px;
+    font-size: 56px;
+    font-weight: 900;
+    color: #c5941a;
+    letter-spacing: 3px;
     margin-bottom: 8px;
     text-align: center;
-    text-shadow: 1px 1px 0 #d4a017, -1px -1px 0 #8b6914, 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-shadow:
+        0 1px 0 #d4a520,
+        0 2px 0 #b8860b,
+        0 3px 0 #a07508,
+        0 4px 6px rgba(0, 0, 0, 0.3),
+        0 0 8px rgba(197, 148, 26, 0.2);
+    font-family: 'Georgia', 'Times New Roman', serif;
 }
 
 /* Loading spinner */
