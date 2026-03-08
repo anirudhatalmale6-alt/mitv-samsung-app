@@ -78,14 +78,6 @@ body {
     text-align: center;
 }
 
-#loading-screen .app-subtitle {
-    font-size: 26px;
-    color: #c5a236;
-    letter-spacing: 5px;
-    margin-bottom: 50px;
-    font-weight: 300;
-}
-
 /* Loading spinner */
 .spinner {
     width: 56px;
@@ -94,6 +86,7 @@ body {
     border-top: 4px solid #b8860b;
     border-radius: 50%;
     animation: spin 1s linear infinite;
+    margin-bottom: 24px;
 }
 
 @keyframes spin {
@@ -101,12 +94,18 @@ body {
     100% { transform: rotate(360deg); }
 }
 
-.loading-text {
-    margin-top: 20px;
-    font-size: 20px;
-    color: #c5a236;
-    letter-spacing: 2px;
-    font-weight: 300;
+/* VER EN VIVO button - matches website style */
+.ver-en-vivo {
+    display: inline-block;
+    padding: 16px 60px;
+    background: #17a2b8;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    text-align: center;
 }
 
 /* ── Top Bar ── */
@@ -210,12 +209,12 @@ body {
     min-width: 34px;
     height: 34px;
     padding: 0 10px;
-    border: 2px solid rgba(218, 165, 32, 0.6);
+    border: 2px solid rgba(23, 162, 184, 0.6);
     border-radius: 8px;
     font-size: 14px;
-    color: #daa520;
+    color: #17a2b8;
     font-weight: 600;
-    background: rgba(218, 165, 32, 0.1);
+    background: rgba(23, 162, 184, 0.1);
 }
 
 /* ── Buffering Overlay ── */
