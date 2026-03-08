@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns:tizen="http://tizen.org/ns/widgets"
+        xmlns="http://www.w3.org/ns/widgets"
+        id="http://mitv.app/MiTV"
+        version="1.0.0"
+        viewmodes="maximized">
+
+  <tizen:application id="MiTVLive0.MiTV"
+                     package="MiTVLive0"
+                     required_version="6.0"/>
+
+  <content src="index.html"/>
+  <icon src="icon.png"/>
+  <name>MI TV</name>
+  <description>MI TV - 24/7 Spanish Entertainment Channel. Classic shows, cartoons, and entertainment live streaming.</description>
+
+  <tizen:profile name="tv-samsung"/>
+
+  <tizen:setting screen-orientation="landscape"
+                 context-menu="enable"
+                 background-support="enable"
+                 encryption="disable"
+                 install-location="auto"
+                 hwkey-event="enable"/>
+
+  <feature name="http://tizen.org/feature/screen.size.normal.1080.1920"/>
+
+  <!-- Network access -->
+  <access origin="*" subdomains="true"/>
+
+  <!-- Required privileges -->
+  <tizen:privilege name="http://tizen.org/privilege/internet"/>
+  <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice"/>
+  <tizen:privilege name="http://tizen.org/privilege/tv.window"/>
+  <tizen:privilege name="http://tizen.org/privilege/fullscreen"/>
+
+  <!-- Samsung-specific privileges -->
+  <tizen:privilege name="http://developer.samsung.com/privilege/network.public"/>
+  <tizen:privilege name="http://developer.samsung.com/privilege/productinfo"/>
+
+</widget>
