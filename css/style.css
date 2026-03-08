@@ -56,16 +56,29 @@ body {
 }
 
 #loading-screen .logo-container {
-    width: 480px;
+    width: 640px;
     height: auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#loading-screen .logo-container::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 5%;
+    width: 90%;
+    height: 40px;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.15) 35%, rgba(0, 0, 0, 0.05) 55%, transparent 75%);
+    border-radius: 50%;
+    z-index: 0;
 }
 
 #loading-screen .logo-container img {
     width: 100%;
     height: auto;
-    border-radius: 12px;
-    filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.15));
+    position: relative;
+    z-index: 1;
 }
 
 #loading-screen .app-title {
