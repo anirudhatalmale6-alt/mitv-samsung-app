@@ -71,11 +71,10 @@ body {
 #loading-screen .app-title {
     font-size: 52px;
     font-weight: 700;
-    color: #e8e8e8;
-    letter-spacing: 5px;
+    color: #212529;
+    letter-spacing: 2px;
     margin-bottom: 8px;
     text-align: center;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 /* Loading spinner */
