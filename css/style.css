@@ -94,17 +94,13 @@ body {
     100% { transform: rotate(360deg); }
 }
 
-/* VER EN VIVO button - matches website style */
+/* VER EN VIVO text */
 .ver-en-vivo {
-    display: inline-block;
-    padding: 16px 60px;
-    background: #17a2b8;
-    color: #ffffff;
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: 4px;
+    font-size: 36px;
+    font-weight: 900;
+    color: #e53935;
+    letter-spacing: 6px;
     text-transform: uppercase;
-    border-radius: 8px;
     text-align: center;
 }
 
