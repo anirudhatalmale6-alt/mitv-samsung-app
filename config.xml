@@ -11,8 +11,8 @@
 
   <content src="index.html"/>
   <icon src="icon.png"/>
-  <name>Mi TELEVISION CLASICA</name>
-  <description>Mi TELEVISION CLASICA - 24/7 Spanish Entertainment Channel. Classic shows, cartoons, and entertainment live streaming.</description>
+  <name>MI TELEVISION CLASICA FAMILIAR</name>
+  <description>MI TELEVISION CLASICA FAMILIAR - 24/7 Spanish Entertainment Channel. Classic shows, cartoons, and entertainment live streaming.</description>
 
   <tizen:profile name="tv-samsung"/>
 
